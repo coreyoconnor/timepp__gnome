@@ -517,7 +517,7 @@ var TimeTracker  = class TimeTracker {
         if (! this.csv_dir) return;
 
         for (let it of this.delegate.tasks) {
-            if (it.tracker_id === id) this.start_tracking(it);
+            if (it.task_str === id) this.start_tracking(it);
         }
     }
 
@@ -525,7 +525,7 @@ var TimeTracker  = class TimeTracker {
         if (! this.csv_dir) return;
 
         for (let it of this.delegate.tasks) {
-            if (it.tracker_id === id) this.stop_tracking(it);
+            if (it.task_str === id) this.stop_tracking(it);
         }
     }
 
